@@ -80,7 +80,7 @@ public class Employee {
 				"Vergi:"+tax()+"\n"+
 				"Bonus :" +bonus()+"\n"+
 				"Kýdem Bonusu :"+raiseSalary()+"\n"+
-				"Toplam Maaþ :"+ (getSalary()+bonus()+raiseSalary()-tax())
+				"Toplam  Maaþ :"+ (getSalary()+bonus()+raiseSalary()-tax())
 		
 				;
     	
