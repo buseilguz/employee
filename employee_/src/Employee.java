@@ -39,7 +39,7 @@ public class Employee {
 		this.hireYear = hireYear;
 	}
 	
-	
+	//maaþ 1000 TL'den fazlaysa %3 vergi
 	public double tax() {
 		double tax=0;;
 		if(getSalary()>=1000) {
@@ -49,7 +49,7 @@ public class Employee {
 		 return tax;
 	}
 	
-	
+	//40 saatten fazla çalýþtýysa bonus
 	public double bonus() {
 		double bonus=0;
 		if(getWorkHours()>40) {
@@ -57,6 +57,7 @@ public class Employee {
 		}
 		return bonus;
 	}
+	//iþe baþlama yýlýna göre maaþ artýþý
     public double raiseSalary() {
     	double raiseSalary=0;
     	double totalSalary=getSalary()+tax()+bonus();
